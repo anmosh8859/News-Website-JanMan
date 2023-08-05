@@ -1,0 +1,193 @@
+.add{
+    border:1px solid;
+    border-color:rgba(0,0,0,0.1);
+    float:left;
+    width:20%;
+}
+.front{
+    float:left;
+    width:60%;
+}
+.brnews{
+    margin:1%;
+    overflow:hidden;
+    font-size: 1.5vw;
+    font-weight: 900;
+    white-space: nowrap;
+}
+.breaking{
+    float: left;
+    color:#ccccb3;
+    background-color: black;
+    width: 15%;
+    height:2.5vw;
+    font-size: 60%;
+    text-align: center;
+}
+.breaking p{
+    display: inline-block;
+    vertical-align: middle;
+}
+.news{
+    float: left;
+    color:#ccccb3;
+    background-color: #800018;
+    width: 85%;
+    font-size: 70%;
+    height:2.5vw;
+    padding: 1%;
+}
+.news a{
+    display:inline-block;
+    vertical-align: middle;
+    width: 90%;
+}
+.cl{
+    float: right;
+    text-align: right;
+    font-size: 200%;
+    width: 8%;
+    vertical-align: middle;
+    transition: 0.6s ease;
+}
+.cl a{
+    color: #ccccb3;
+    margin-top: -10%;
+}
+.cl a:hover{
+    color: white;
+    cursor: pointer;
+    font-size: 120%;
+    margin-top: -15%;
+}
+.imgcontainer{
+    position: relative;
+    max-width: 60%;
+    float: left;
+}
+.caption{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+.image{
+    display: none;
+}
+.image img{
+    width: 100%;
+    vertical-align: middle; 
+}
+.prev,.next{
+    position: absolute;
+    display:block;
+    top: 50%;
+    user-select: none;
+    color: #ccccb3;
+    font-size: xx-large;
+    padding:2%;
+    margin-top:-5%;
+    font-weight: bolder;
+    transition: 0.6s ease;
+    border-radius:0 10% 10% 0;
+}
+.next{
+    right:0;
+    border-radius: 10% 0 0 10%;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color:white;
+}
+.caption{
+    background-color: rgba(0,0,0,0.5);
+}
+.caption a{
+    color:#ccccb3;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.caption a:hover{
+    text-decoration: underline;
+}
+.dots{
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+.dot{
+    display: inline-block;
+    height:12px;
+    width:12px;
+    border-radius: 50%;
+    background-color: #ccccb3;
+}
+.dot:hover{
+    border:2px #555543 inset;
+    cursor: pointer;
+}
+.active{
+    background-color: #555543;
+}
+.latestnews{
+    float:left;
+    width: 40%;
+    max-height: 17.5vw;
+    overflow: auto;
+}
+.lnh{
+    background: none;
+    padding:0.5%;
+    padding-top: 0;
+    border:none;
+    border-bottom:3px black solid;
+    color:black; 
+    display: block;
+    font-size: 120%;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+.lnh:hover,.n:hover{
+    text-decoration: underline;
+}
+.n{
+    display: block;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(85, 85, 67, 0.9);
+    border-bottom-right-radius: 10%;
+    color:#555543;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.TopNews{
+    float:left;
+    min-width:30%;
+    max-height: 28.8vw;
+    overflow: auto;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #800018; 
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #630014;
+}
+.NewsBox{
+    float:left;
+    min-width:70%;
+    height: 28.75vw;
+}
+.nh{
+    margin:1%;
+}
+.nh a{
+    color:#800018;
+}
+.nh a:hover{
+    color:#630014;
+    text-decoration: underline;
+}

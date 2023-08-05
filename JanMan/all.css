@@ -1,0 +1,86 @@
+.all{
+    width:40%;
+    float:left;
+}
+.open{
+    float:right;
+    overflow: hidden;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 160%;
+    color:#ccccb3;
+    margin-right:2%;
+    margin-top:0.5%;
+    transition: 0.2s ease;
+}
+.open:hover{
+    color:#e2e2d3;
+}
+.asuboption{
+    background-color:rgba(194, 194, 173,0.96);
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.6s ease;}
+.asuboption .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 300%;
+    color:#800018;
+    transition: 0.2s ease;
+}
+.asuboption .close:hover{
+    font-size: 320%;
+    top:19px;
+    right:43px;
+    font-weight: 900;
+}
+.content{
+    position: relative;
+    top:10%;
+    overflow:auto;
+    font-size:150%;
+    padding-left:15%;
+}
+.aoption{
+    padding:0 4%;
+}
+.all .aoption a{
+    font-size: smaller;
+    transition: 0.2s ease;
+}
+.all .aoption .column{
+    font-size: smaller;
+}
+.asuboption .aoption{
+    float:left;
+}
+.asuboption .aoption a{
+    display:block;
+}
+.content h3{
+    color:#800018;
+}
+.content a{
+    color:#3a3a31;
+}
+.content a:hover{
+    color:#640114;
+    font-size:90%;
+    font-weight:300;
+}
+.others{
+    width:100%;
+    overflow: hidden;
+    margin:0;
+    margin-top: 30%;
+    
+}
+.others .aoption{
+width:22%;
+}

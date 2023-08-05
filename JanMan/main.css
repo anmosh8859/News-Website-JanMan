@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    transition:0.4s ease;
+}
+div{
+    text-align: justify;
+    margin:0px;
+}
+#t{
+    color: #ccccb3;
+    text-transform: uppercase;
+    z-index: 1;
+    position: fixed;
+    text-align: center;
+    top: -0.3%;
+    left:48%;
+    font-weight: 900;
+    display:none;
+    transition: 0.4s ease;
+}
+#t span{
+    font-size: x-large;
+}
+#t:hover{
+    color:white;
+}
+a{
+    text-decoration: none;
+}
+.tad{
+    overflow: hidden;
+    width:100%;
+}
+.date{
+    width: 50%;
+    height:3%;
+    float: left;
+    border:0px;
+
+}
+.signin{
+    width: 50%;
+    height:3%;
+    float: left;
+    border:0px;
+}
+#demo{
+    position: relative;
+    margin: 0.5% 30%;
+    font-size: 75%;
+    text-align: justify;
+}
+#signin{
+    position: relative;
+    margin:0.3% 30%;
+    float: right ;
+}
+.titlemenu{
+    overflow: hidden;
+    width:100%;
+    background-color: #800018;
+    transition:0.4s;
+}
+.logoweather{
+    width:20%;
+    float:left;
+}
+.logoweather img{
+    height: 15%;
+    width: auto;
+}
+.description{
+    padding:auto;
+    text-align: center;
+    height: auto;
+}
+.description a{
+    display: inline-block;
+    font-weight: 900;
+    color:#ccccb3;
+    transition:0.2s ease;
+}
+.description a:hover{
+    color:white;
+}
+.else{
+    float: left;
+    width:40%;
+}
+.search{
+    width:60%;
+    float:left;
+}
+input{
+    float:right;
+    border:1px inset #3a3a31;
+    background-color:#c4c4ae;
+    font-size: 110%;
+    padding:2%;
+    height:5%;
+    width:40%;
+    color:#3a3a31;
+    border-right:none;
+    transition: 0.5s;
+}
+input:focus{
+    background-color:#f5f5d7;
+    width:80%;
+    border:1px inset #3a3a31;
+    border-right:none;
+}
+input:hover{
+    background-color:#f5f5d7;
+}
+button{
+    float:right;
+    border:1px inset #3a3a31;
+    background-color:#f5f5d7;
+    padding:2%;
+    height:5%;
+    border-left:none;
+    font-size:larger;
+}
+.pv a{
+    margin:1% 0;
+    padding:0 1%;
+    float:right;
+    font-weight: 900;
+    font-size: 200%;
+    color:#ccccb3;
+    background-color: #660113;
+}
+
+.pv a:hover~div:nth-of-type(1){
+    display:block;
+}
+.pv div{
+    display:none;
+
+}

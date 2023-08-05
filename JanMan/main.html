@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link type="text/css" href="Option.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="all.css">
+        <link rel="stylesheet" type="text/css" href="foot.css">
+        <link rel="stylesheet" type="text/css" href="pages.css">
+        <script src="script.js"></script>
+    </head>
+    <body onload="window.setInterval(autoSlide(), 5000)">
+        <div class="front">
+            <div class="brnews" id="b">
+                <div class="breaking">BREAKING NEWS</div><div class="news"><a> Here the news to be publish... </a>
+                    <span class="cl"><a href="javascript:void(1)" onclick="cl()"> &times; </a></span>
+                </div>
+            </div>
+            <div class="imgcontainer">
+                <div class="image">
+                    <img src="Image1.png"/>
+                    <div class="caption"><a href="">Here is the news realated to it.</a></div>
+                </div>
+                <div class="image">
+                    <img src="Image2.png"/>
+                    <div class="caption"><a href="">Here is the news related to it.</a></div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)" href="javascript:void(0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)" href="javascript:void(0)">&#10095;</a>
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+                <script>
+                    var slideIndex=1;
+                    showslides(slideIndex);
+        
+                    function plusSlides(n) {
+                        showslides(slideIndex+=n);
+                    }
+                    function autoSlide() {
+                        plusSlides(1);
+                    }
+                    function currentSlide(n) {
+                        showslides(slideIndex=n);
+                    }
+                    function showslides(n) {
+                        var i;
+                        var dots=document.getElementsByClassName("dot");
+                        var slides = document.getElementsByClassName("image");
+                        if(n>slides.length){slideIndex=1}
+                        if(n<1){slideIndex=slides.length}
+                        for(i=0;i<slides.length;i++){
+                            slides[i].style.display="none";
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex-1].style.display = "block";
+                        dots[slideIndex-1].className += " active";
+                    }
+                </script>
+            </div>
+            <div class="latestnews">
+                <a href="" class="lnh">Latest News</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+            </div>
+            <div class="TopNews">
+                <a href="" class="lnh">Top News Stories</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+                <a href="" class="n">Here is the news.</a>
+            </div>
+            <div class="NewsBox">
+                <h1 class="nh"><a href="">News Heading</a></h1>
+                Content...
+            </div>
+        </div>
+    </body>
+</html>

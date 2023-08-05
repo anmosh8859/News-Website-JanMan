@@ -1,0 +1,77 @@
+.important{
+    width:40%;
+    overflow: hidden;
+    background-color: #800018;
+    border:none;
+    float:left;
+    margin-top:3.5%;
+    transition: 0.4s ease;
+}
+.option{
+    float:left;
+    overflow: hidden;
+    display: inline-block;
+    padding: 0 0.5%;
+    transition: 0.2s ease;
+}
+.option a{
+    font-weight: 900;
+    font-size: 160%;
+    color:#ccccb3;
+    border-right:1px inset;
+    border-right-color: rgba(204, 204, 179,0.4);
+    transition: 0.1s ease;
+}
+.suboption{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color:#c2c2ad;
+    border-bottom:7px groove #800018;
+}
+.suboption a{
+    display:block;
+    text-decoration: none;
+    font-weight: 500;
+    padding-top:5%; 
+    padding-bottom:5%;  
+    color:#640114;
+    font-size:95%;
+    background-color:#c2c2ad;
+    transition: 0.1s ease;
+    text-align: justify; 
+}
+.heading{
+    font-weight: 900;
+    padding-left:16px;
+    padding-top:12px;
+    margin-bottom:12px;
+    font-size: 110%;
+    background-color:#640114;
+    color:#c2c2ad;
+}
+.column{
+    float: left;
+    width:33.33%;
+    min-width: 160px;
+}
+.option:hover .suboption{
+    display: block;
+}
+.option:hover .h{
+    color:#c2c2ad;
+    background-color:#640114;
+    border-right:1px #c2c2ad solid;
+    font-size:110%;
+}
+.suboption a:hover{
+    background-color:#640114;
+    color:#c2c2ad;
+    font-size:105%;
+    font-weight:500;
+}
+.suboption:hover .h{
+    background-color: aqua;
+}
